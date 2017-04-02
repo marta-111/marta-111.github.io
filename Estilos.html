@@ -1,0 +1,270 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_700.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+#page1 .main header .wrapper blockquote blockquote p {
+	text-align: justify;
+}
+#apDiv1 {
+	position:absolute;
+	width:371px;
+	height:115px;
+	z-index:1;
+	left: 356px;
+	top: 354px;
+}
+#apDiv2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 425px;
+	top: 1px;
+}
+#apDiv3 {
+	position:absolute;
+	width:626px;
+	height:308px;
+	z-index:1;
+	left: 263px;
+	top: 9px;
+	background-color: #CCCCCC;
+}
+body,td,th {
+	color: #000000;
+}
+</style>
+</head>
+<body id="page1">
+<div class="main">
+<!-- header -->
+	<header>
+	  <div class="wrapper">
+		  <h1><img src="images/01.png" width="920" height="164"></h1>
+	    <p>&nbsp;</p>
+		
+		  
+	    <p>
+          <marquee behaviour=alternate scrolldelay=500 bgcolor="#ff8833">--UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA UNAD ---CURSO DISEÑO DE SITIOS WEB--GRUPO 301122_26	  </marquee>
+	    </p>
+	  </div> 
+      
+      <marquee> Escuela de Ciencias Básicas Tecnología e Ingeniería   </marquee>
+      <nav>
+			<ul id="menu">
+				<li class="alpha" id="menu_active"><a href="inicio.html"><span><span>INICIO</span></span></a></li>
+				<li><a href="lecturas.html"><span><span>LECTURAS</span></span> </a></li>
+				<li><a href="Multimedia.html"><span><span> MULTIMEDIA</span></span></a></li>
+				<li><a href="Actividades.html"><span><span>ACTIVIDADES</span></span></a></li>
+				<li class="omega"><a href="autores.html"><span><span>AUTORES</span></span></a></li>
+			</ul>
+	  </nav>
+      <p>&nbsp;</p>
+	</header>
+	<div class="ic">diseñado por henry vanegas Plaza</div>
+<!-- / header -->
+<!-- content -->
+  <section id="content">
+	<div class="wrapper">
+			<div class="color1">
+			  <h1>&nbsp;</h1>
+			  <h2 class="pad_left2"><a href="http://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=714:selectores-css-id-aplicar-css-a-partes-de-una-web-ejemplos-diferenciar-etiquetas-html-en-ids-cu01011d&catid=75:tutorial-basico-programador-web-css-desde-cero&Itemid=203">Selectores CSS: id. Aplicar CSS a partes de una web. Ejemplos. Diferenciar etiquetas HTML en ids (CU01011D)</a></h2>
+			  <h2>&nbsp;</h2>
+			  <p>&nbsp;</p>
+			  <table width="898" border="3" align="center" cellpadding="3" cellspacing="3" class="marg_top2">
+			    <tr>
+			      <td bgcolor="#CCCCCC"><p><strong>SELECTORES CSS</strong></p>
+			        <p>Hemos estudiado cómo aplicar estilos CSS a todas las etiquetas HTML de un tipo, por ejemplo a todos los párrafos, todas las listas, todos los links, etc. Pero en numerosas ocasiones no queremos que todas las etiquetas de un tipo tengan un mismo estilo, sino aplicar distintos estilos a una etiqueta o a una parte de una página web. Para ello además del selector de etiqueta o palabra clave que ya conocemos existen otros selectores, entre los más usados tenemos los selectores por id y los selectores de clase.</p>
+			        <div><img alt="css" src="https://lh4.googleusercontent.com/-QrvgsF9RKAo/U5F4qSiNXYI/AAAAAAAAA3M/vMjlEmgHl_w/s80/logo_css.jpg"></div>
+			        <p> </p>
+			        <p>Recordemos primero los selectores de etiqueta o palabra clave tipo etiqueta {propiedad:valor;}:</p>
+			        <p>ul {color:red;} suponía aplicar color rojo al texto de todas las listas de tipo ul del documento HTML, es decir, a todas las etiquetas &lt;ul&gt; … &lt;/ul&gt;.</p>
+			        <p>a {color:green; text-decoration: none;} suponía aplicar color verde y sin subrayado a todos los links del documento HTML, es decir, a todas las etiquetas &lt;a&gt; … &lt;/a&gt;.</p>
+			        <p>De la misma forma se pueden usar como selector otras etiquetas HTML como div { }, span { }, p { }, etc. pero suponiendo que se apliquen a todos los elementos de ese tipo.</p>
+			        <p> </p>
+			        <p> </p>
+			        <p><strong>SELECTOR POR ID</strong></p>
+			        <p>Trataremos ahora de aplicar estilos a sólo una parte de una página web o documento HTML. Esto implica dos cosas:</p>
+			        <p>a) En el documento HTML, habrá que identificar la parte del documento a la que queremos aplicar esos estilos incluyendo un atributo para la etiqueta que delimita el fragmento de código donde queremos aplicar estilos. Por ejemplo si queremos aplicar estilos dentro de un contenedor div la sintaxis sería &lt;div id=&rdquo;nombreIdentificativoElegido&rdquo;&gt; … &lt;/div&gt;. Si quisiéramos aplicar estilos sólo a un párrafo la sintaxis sería &lt;p id=&rdquo;nombreIdentificativoElegido&rdquo;&gt; … &lt;/p&gt;</p>
+			        <p>b) En la declaración de estilos tendremos que declarar los estilos a aplicar a ese fragmento de código realizando la declaración usando esta sintaxis.  </p>
+			        <center>
+			          <table border="1" cellpadding="14" cellspacing="1" height="181" width="290">
+			            <tbody>
+			              <tr>
+			                <td>#nombreIdentificativoElegido {
+			                  <p>propiedad1ParaEseTipoDeElementos: valor;</p>
+			                  <p>propiedad2ParaEseTipoDeElementos: valor;</p>
+			                  <p>propiedad3ParaEseTipoDeElementos: valor;</p>
+			                  <p>…</p>
+			                  <p>propiedadnParaEseTipoDeElementos: valor;</p>
+			                  }</td>
+		                  </tr>
+		                </tbody>
+		              </table>
+		            </center>
+			        <p> </p>
+			        <p> </p>
+			        <p>Las propiedades se pueden definir en una sola línea si se prefiere así, el único requisito es separarlas con punto y coma.</p>
+			        <p>Con un ejemplo lo veremos más claro. Partimos del código base HTML que estamos usando para el curso, en el cual tenemos un menú. Vamos a elegir un nombre para identificar ese menú. Podríamos elegir como nombre &lt;&lt;menu&gt;&gt; (usaremos nombres sin tildes). Ahora mismo solo tenemos un menú, pero en el futuro es posible que existan otros, por eso vamos a preferir elegir como nombre &lt;&lt;menu1&gt;&gt;. En el documento HTML vamos a identificar el menú con el atributo id aplicado al contenedor div dentro del cual está el menú. El código es este:</p>
+			        <center>
+			          <table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" width="662">
+			            <tbody>
+			              <tr>
+			                <td valign="top"><p>&lt;!DOCTYPE html&gt;<br>
+			                  &lt;!-- Código ejemplo para el curso CSS --&gt;<br>
+			                  &lt;html&gt;<br>
+			                  &lt;head&gt;<br>
+			                  &lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;<br>
+			                  &lt;meta charset="utf-8"&gt;<br>
+			                  &lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;<br>
+			                  &lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;<br>
+			                  <strong>&lt;link rel="stylesheet" type="text/css" href="rutaDelArchivo.css"&gt;</strong><br>
+			                  &lt;/head&gt;<br>
+			                  &lt;!-- Contenido de la página web --&gt;<br>
+			                  &lt;body&gt;<br>
+			                  &lt;!-- Cabecera de la página web --&gt;<br>
+			                  &lt;div&gt;<br>
+			                  &lt;h1&gt;Portal web aprenderaprogramar.com&lt;/h1&gt;<br>
+			                  &lt;h2&gt;Didáctica y divulgación de la programación&lt;/h2&gt;<br>
+			                  &lt;/div&gt;<br>
+			                  &lt;!-- Fin de la cabecera de la página web --&gt;<br>
+			                  &lt;br /&gt;<br>
+			                  &lt;!-- Contenedor para la parte central --&gt;<br>
+			                  &lt;div&gt;<br>
+			                  &lt;!-- menu --&gt;<br>
+			                  <strong>&lt;div id = "menu1"&gt;</strong><br>
+			                  &lt;div&gt;Menú&lt;/div&gt;<br>
+			                  &lt;hr/&gt;<br>
+			                  &lt;ul&gt;<br>
+			                  &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+			                  &lt;li&gt; &lt;a href="libros.html"&gt;Libros de programación&lt;/a&gt; &lt;/li&gt;<br>
+			                  &lt;li&gt; &lt;a href="cursos.html"&gt;Cursos de programación&lt;/a&gt; &lt;/li&gt;<br>
+			                  &lt;li&gt; &lt;a href="humor.html"&gt;Humor informático&lt;/a&gt; &lt;/li&gt;<br>
+			                  &lt;/ul&gt;<br>
+			                  &lt;/div&gt;<br>
+			                  &lt;!-- fin menu --&gt;<br>
+			                  <strong>&lt;!-- Aquí el resto del código del ejemplo --&gt;</strong><br>
+			                  &lt;/html&gt;</p></td>
+		                  </tr>
+		                </tbody>
+		              </table>
+		            </center>
+			        <p> </p>
+			        <p> </p>
+			        <p>Hemos incluido &lt;div id=&rdquo;menu1&rdquo;&gt; en el contenedor div que delimita nuestro menú.</p>
+			        <p>En el archivo css externo, en nuestro caso denominado estilos.css, vamos a definir que ese fragmento de página web (el menú) tenga el texto verde y fondo gris. Para ello escribiremos lo siguiente:</p>
+			        <div>
+			          <center>
+			            <table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" height="116" width="418">
+			              <tbody>
+			                <tr>
+			                  <td valign="top"><p>/* Curso CSS estilos aprenderaprogramar.com*/<br>
+			                    #menu1{<br>
+			                    color:green;<br>
+			                    background-color: DarkGray;<br>
+			                    }</p></td>
+		                    </tr>
+		                  </tbody>
+		                </table>
+		              </center>
+			          <p> </p>
+			          <p> </p>
+			          <p>Si lo preferimos podemos escribir la declaración en una sola línea, obteniendo el mismo resultado. Es decir, podemos escribir #menu1 {color:green; background-color: DarkGray; }. Esto resulta más compacto y ahorra espacio, pero también puede ser menos claro a la hora de leer. Algunos programadores o diseñadores prefieren el estilo compacto y otros diferenciando líneas.</p>
+			          <p>El resultado obtenido será similar a este:</p>
+		            </div>
+			        <p><img alt="css basico" src="https://lh3.googleusercontent.com/-3t1cluUAKJU/UgJ7ZLbYWkI/AAAAAAAAAII/p6JB7zGFZ2M/s524/CU01011D_1.jpg"></p>
+			        <p><br>
+		            </p>
+			        <p>Analicemos ahora el resultado obtenido: se ha aplicado el fondo gris a la caja que define el contenedor div. Se ha aplicado color verde al texto y a las viñetas de la lista existente en el menú. Sin embargo, los links del menú mantienen su color azul y subrayado, a pesar de que hemos indicado que el color verde debería de aplicarse a todo el contenedor. ¿Por qué ocurre esto? CSS no aplica la misma importancia a todas las reglas o estilos que se especifican. En este caso la regla o estilo que hemos definido no supera en la escala de importancia CSS a la regla por defecto según la cual los links son de color azul y subrayado.</p>
+			        <p>Para resolver este conflicto hemos de especificar que queremos que los elementos &lt;a&gt; … &lt;/a&gt; (links) dentro del bloque de código con identificador menu1 se muestren aplicando la regla de estilo definida para el menú. Modifica el archivo css escribiendo el siguiente código y visualiza la página web:</p>
+			        <center>
+			          <table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" height="76" width="469">
+			            <tbody>
+			              <tr>
+			                <td valign="top"><p>/* Curso CSS estilos aprenderaprogramar.com*/<br>
+			                  #menu1, #menu1 a  {color:green; background-color: DarkGray; }</p></td>
+		                  </tr>
+		                </tbody>
+		              </table>
+		            </center>
+			        <p> </p>
+			        <p> </p>
+			        <p>Mediante la sintaxis #nombreIdentificativoElegido elementoAfectadoPorElEstilo {…} estamos especificando &ldquo;explícitamente&rdquo; que deseamos aplicar esa regla de estilo al elemento indicado (en nuestro caso los links, &lt;a&gt; … &lt;/a&gt;) dentro de un bloque de código definido por un identificador. De esta forma el navegador le concede preferencia o mayor importancia al estilo definido que al estilo por defecto de los links. El resultado en este caso es que se muestra el texto de los links en color verde (pero se sigue manteniendo el subrayado porque no hemos sobreescrito esta propiedad de los links):</p>
+			        <p><img alt="css basico" src="https://lh3.googleusercontent.com/-zWNpDBDiEF4/UgJ7Zfb3RAI/AAAAAAAAAIA/Gy3k0i_y8MA/s555/CU01011D_2.jpg"></p>
+			        <p> </p>
+			        <p> </p>
+			        <p>Vamos a especificar ahora que los links del menú no aparezcan subrayados. Para ello modificaremos nuestro archivo css dejándolo con esta línea:</p>
+			        <p>#menu1, #menu1 a { color:green; background-color:DarkGray; text-decoration:none;}</p>
+			        <p>Ahora sí tenemos el menú en color verde y sin subrayado, ya que hemos sobreescrito la propiedad text-decoration que estaba dando lugar a la aparición del subrayado:</p>
+			        <p><img alt="selector id css" src="https://lh3.googleusercontent.com/-DFrg7RnLHVQ/UgJ7ZULPEGI/AAAAAAAAAH8/afkp86OSB7w/s553/CU01011D_3.jpg"></p>
+			        <p> </p>
+			        <p> </p>
+			        <p>Es interesante de lo visto hasta ahora razonar cómo CSS trabaja con unos órdenes de precedencia o jerarquía de reglas CSS. No te preocupes de conocerlos con exactitud, ya que a lo largo del curso y a medida que vayas cogiendo experiencia irás aprendiendo más al respecto. También ten en cuenta que los órdenes de precedencia pueden cambiar según los navegadores o según las versiones CSS. Por tanto más que saber con exactitud los órdenes de precedencia nos interesa el ser capaces de interpretar por qué ocurren las cosas y la forma de trabajar de CSS y su filosofía.</p>
+			        <p> </p>
+			        <p> </p>
+			        <p><strong>APLICAR ESTILOS DIFERENCIADOS DENTRO DE UN SELECTOR ID</strong></p>
+			        <p>El código que hemos visto anteriormente se puede escribir también de esta manera:</p>
+			        <center>
+			          <table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" height="93" width="516">
+			            <tbody>
+			              <tr>
+			                <td valign="top"><p>/* Curso CSS estilos aprenderaprogramar.com*/<br>
+			                  #menu1 {color:green; background-color: DarkGray; text-decoration:none; }<br>
+			                  #menu1 a {color:green; background-color: DarkGray; text-decoration:none; }<br>
+			                  }</p></td>
+		                  </tr>
+		                </tbody>
+		              </table>
+		            </center>
+			        <p> </p>
+			        <p> </p>
+			        <p>El efecto con este código sería el mismo que con el anterior. Realmente en este caso no tendría interés escribir la especificación para menu1 {…} y para menu1 a {…} por separado ya que resulta más compacto escribirlo en una línea. Sin embargo sí tiene interés en el caso de que deseemos aplicar un estilo general al menú y sobreescribir o especificar estilos diferenciados para los elementos &lt;a&gt; … &lt;/a&gt; dentro del menú.</p>
+			        <p>En nuestro caso vamos a hacer lo siguiente: estableceremos como color general para el menú rojo y como fondo gris. Como fondo para los links (elementos a) dentro del menú no especificaremos ninguno, el color lo estableceremos en verde y eliminaremos el subrayado. Escribe este código y visualiza el resultado:</p>
+			        <center>
+			          <table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" height="93" width="519">
+			            <tbody>
+			              <tr>
+			                <td valign="top"><p>/* Curso CSS estilos aprenderaprogramar.com*/<br>
+			                  #menu1 {color:red; background-color:DarkGray; }<br>
+			                  #menu1 a {color:green;text-decoration:none; }<br>
+			                  }</p></td>
+		                  </tr>
+		                </tbody>
+		              </table>
+		            </center>
+			        <p> </p>
+			        <p><img alt="precedencia css" src="https://lh3.googleusercontent.com/-rj226KVtk4Y/UgJ7Zk1qk2I/AAAAAAAAAIE/ULTJ3B24zfk/s596/CU01011D_4.jpg"></p>
+			        <p> </p>
+<DIV> </DIV></td>
+		        </tr>
+		      </table>
+			  <p>&nbsp;</p>
+		    </div>
+			<div class="wrapper"></div>
+	  </div>
+  </section>
+<!-- / content -->
+<!-- footer -->
+<footer>
+		<!--<a rel="nofollow" href="http://www.templatemonster.com/" target="_blank">Website template</a> designed by TemplateMonster.com<br>-->
+    <img src="images/99.JPG" width="920" height="164"></footer>
+<!-- / footer -->
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

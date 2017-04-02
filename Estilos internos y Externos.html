@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_700.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_600.font.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+#page1 .main header .wrapper blockquote blockquote p {
+	text-align: justify;
+}
+#apDiv1 {
+	position:absolute;
+	width:371px;
+	height:115px;
+	z-index:1;
+	left: 356px;
+	top: 354px;
+}
+#apDiv2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 425px;
+	top: 1px;
+}
+#apDiv3 {
+	position:absolute;
+	width:626px;
+	height:308px;
+	z-index:1;
+	left: 263px;
+	top: 9px;
+	background-color: #CCCCCC;
+}
+body,td,th {
+	color: #000000;
+}
+</style>
+</head>
+<body id="page1">
+<div class="main">
+<!-- header -->
+	<header>
+	  <div class="wrapper">
+		  <h1><img src="images/01.png" width="920" height="164"></h1>
+	    <p>&nbsp;</p>
+		
+		  
+	    <p>
+          <marquee behaviour=alternate scrolldelay=500 bgcolor="#ff8833">--UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA UNAD ---CURSO DISEÑO DE SITIOS WEB--GRUPO 301122_26	  </marquee>
+	    </p>
+	  </div> 
+      
+      <marquee> Escuela de Ciencias Básicas Tecnología e Ingeniería   </marquee>
+      <nav>
+			<ul id="menu">
+				<li class="alpha" id="menu_active"><a href="inicio.html"><span><span>INICIO</span></span></a></li>
+				<li><a href="lecturas.html"><span><span>LECTURAS</span></span> </a></li>
+				<li><a href="Multimedia.html"><span><span> MULTIMEDIA</span></span></a></li>
+				<li><a href="Actividades.html"><span><span>ACTIVIDADES</span></span></a></li>
+				<li class="omega"><a href="autores.html"><span><span>AUTORES</span></span></a></li>
+			</ul>
+	  </nav>
+      <p>&nbsp;</p>
+	</header>
+	<div class="ic">diseñado por henry vanegas Plaza</div>
+<!-- / header -->
+<!-- content -->
+  <section id="content">
+	<div class="wrapper">
+			<div class="color1">
+			  <h1>&nbsp;</h1>
+			  <h2><A href="http://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75:tutorial-basico-programador-web-css-desde-cero&Itemid=203">Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D)</A></h2>
+			  <p>&nbsp;</p>
+			  <table width="898" border="3" align="center" cellpadding="3" cellspacing="3" class="marg_top2">
+			    <tr>
+			      <td bgcolor="#CCCCCC"><p>No obstante podrás comprobar que hay otros elementos de la página web que también se ven afectados, por ejemplo los links presentes en el texto. Esto se debe a que hay una diferencia importante entre aplicar estilos CSS en línea y aplicarlos como CSS interno en la cabecera &lt;head&gt; … &lt;/head&gt; del documento HTML. Al aplicar estilos en línea, tenemos que repetir la aplicación de estilos en cada una de las líneas que queramos modificar y en cada ocasión afectamos a <STRONG>únicamente una línea</STRONG>. Con la aplicación de estilos interna nos basta con declarar una vez el estilo y el tipo de elemento al que se aplica, y automáticamente se aplicará <STRONG>a todos</STRONG> los elementos de ese tipo existentes dentro de la página web. Esto permite que en una página web de gran extensión nos ahorremos tener que escribir múltiples veces la definición de estilos (una en cada línea), ya que una sola declaración inicial nos bastará, lo cual es una ventaja bastante evidente.</p>
+			        <p> Sin embargo ahora surge una cuestión adicional: es posible que tengamos dos o más listas de tipo &lt;ul&gt; y en algunos casos, por ejemplo menús, queramos aplicar un estilo, y en otros casos, por ejemplo listas de elementos dentro de un artículo periodístico, queramos aplicar otro estilo. También es posible que deseemos que los elementos del menú sean links con texto verde y sin subrayado, pero queramos mantener el resto de links como texto azul con subrayado. Tal y como hemos hecho la definición de estilos no conseguimos hacer esto, ya que estamos modificando <STRONG>todas</STRONG> las listas y <STRONG>todos</STRONG> los links presentes en el documento. CSS permite resolver satisfactoriamente esta problemática para aplicar estilos específicamente allí donde queremos. Veremos cómo próximamente.</p>
+			        <p>  </p>
+			        <p>  </p>
+			        <p><STRONG>CSS EXTERNO</STRONG></p>
+			        <p> Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html, seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.</p>
+			        <p> Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo independiente que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.</p>
+			        <p> Vamos a generar un archivo de estilos independiente. Para ello abre Notepad++ (o el editor de texto que estés usando) y crea un archivo con el siguiente contenido:</p>
+			        <DIV>
+			          <CENTER>
+			            <TABLE width="418" align="center" bgcolor="#bdbdbd" border="1" cellspacing="1" cellpadding="7">
+			              <TBODY>
+			                <TR>
+			                  <TD valign="top"><p> /* Comentario en CSS estilos aprenderaprogramar.com*/<BR>
+			                    ul {color:red;}<BR>
+			                    a {color:green; text-decoration: none;}</p></TD>
+		                    </TR>
+		                  </TBODY>
+		                </TABLE>
+		              </CENTER>
+			          <p>  </p>
+			          <p>  </p>
+		            </DIV>
+			        <DIV>
+			          <p> Seguimos usando las mismas propiedades CSS y los mismos valores que hemos usado en la forma CSS en línea y en la forma CSS interna.</p>
+			          <p> Los contenidos que se encuentren entre los símbolos /* …. */ serán considerados comentarios y se pueden usar para introducir información del autor del archivo, versión, etc. así como para escribir aquellas aclaraciones sobre los estilos que se consideren necesarias. Un comentario puede comprender una o varias líneas según se desee.</p>
+			          <p> Elige Guardar Como… y guarda el archivo con un nombre y extensión css, por ejemplo estilos.css. Asegúrate que la extensión del archivo sea css. No es válido si no tiene esta extensión.</p>
+			          <p> En nuestro archivo HTML eliminaremos la definición de estilos interna y dejaremos sólo la invocación al archivo escrita con la siguiente sintaxis:</p>
+			          <CENTER>
+			            <TABLE width="522" border="1" cellspacing="1" cellpadding="7">
+			              <TBODY>
+			                <TR>
+			                  <TD><p> &lt;head&gt;</p>
+			                    <p> …</p>
+			                    <p><STRONG>&lt;link rel="stylesheet" type="text/css" href="rutaDelArchivo.css"&gt;</STRONG></p>
+			                    <p> &lt;/head&gt;</p></TD>
+		                    </TR>
+		                  </TBODY>
+		                </TABLE>
+		              </CENTER>
+			          <p>  </p>
+			          <p>  </p>
+			          <p> link es una etiqueta que se usa en HTML para establecer vínculos entre un documento HTML y otros recursos como una imagen de icono o una hoja de estilos CSS. En este caso se indica con la propiedad rel (relación o relationship) que el documento HTML debe usar los estilos definidos como texto/css en un archivo con el nombre indicado. Ten en cuenta que si como ruta de archivo indicas simplemente el nombre del archivo, éste debe encontrarse en la misma carpeta en que se encuentre el documento HTML. Si el archivo CSS se encuentra en otra carpeta deberás indicarlo escribiendo una URL completa u bien una URL relativa que determine la ruta.</p>
+			          <p> Nosotros ubicaremos de momento el archivo CSS en la misma carpeta que el archivo HTML. En el archivo HTML tendremos lo siguiente:</p>
+			          <CENTER>
+			            <TABLE width="662" align="center" bgcolor="#bdbdbd" border="1" cellspacing="1" cellpadding="7">
+			              <TBODY>
+			                <TR>
+			                  <TD valign="top"><p> &lt;!DOCTYPE html&gt;<BR>
+			                    &lt;!-- Código ejemplo para el curso CSS --&gt;<BR>
+			                    &lt;html&gt;<BR>
+			                    &lt;head&gt;<BR>
+			                    &lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;<BR>
+			                    &lt;meta charset="utf-8"&gt;<BR>
+			                    &lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;<BR>
+			                    &lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;<BR>
+			                    <STRONG>&lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;</STRONG><BR>
+			                    &lt;/head&gt;<BR>
+			                    <STRONG>&lt;!-- Aquí el resto del código del ejemplo --&gt;</STRONG><BR>
+			                    &lt;/html&gt;</p></TD>
+		                    </TR>
+		                  </TBODY>
+		                </TABLE>
+		              </CENTER>
+			          <p>  </p>
+			          <p>  </p>
+			          <p> Ahora procedemos a visualizar el archivo HTML en nuestro navegador. Si se está cargando la hoja de estilos correctamente deberemos obtener el mismo resultado que habíamos obtenido con la aplicación de estilos interna. Prueba a hacer distintos cambios en el archivo css y visualiza los resultados.</p>
+			          <p>  </p>
+			          <p>  </p>
+			          <p><STRONG>¿QUÉ TIPO DE CSS USAR?</STRONG></p>
+			          <p> En la siguiente tabla hacemos un resumen de las características de los distintos tipos de CSS que hemos visto hasta el momento:</p>
+			          <TABLE border="1" cellspacing="0" cellpadding="7">
+			            <THEAD>
+			              <TR>
+			                <TD><p><strong>DECLARACIÓN CSS</strong></p></TD>
+			                <TD><p><strong>ARCHIVOS AFECTADOS</strong></p></TD>
+			                <TD><p><strong>CSS SE APLICA A</strong></p></TD>
+		                  </TR>
+		                </THEAD>
+			            <TBODY>
+			              <TR>
+			                <TD><p><strong>En línea</strong></p></TD>
+			                <TD><p> Uno, aquel donde se realiza la declaración</p></TD>
+			                <TD><p> Una línea de código.</p></TD>
+		                  </TR>
+			              <TR>
+			                <TD><p><strong>Interna</strong></p></TD>
+			                <TD><p> Uno, aquel en cuya cabecera se realiza la declaración</p></TD>
+			                <TD><p> Todos los elementos del archivo en los que resulte de aplicación el estilo</p></TD>
+		                  </TR>
+			              <TR>
+			                <TD><p><strong>Externa</strong></p></TD>
+			                <TD><p> Todos los archivos que invoquen el archivo css</p></TD>
+			                <TD><p> Todos los elementos de los archivos afectados en que resulte de aplicación el estilo</p></TD>
+		                  </TR>
+		                </TBODY>
+		              </TABLE>
+			          <p>  </p>
+			          <p>  </p>
+			          <p> ¿Cuál de estas formas de aplicar CSS es mejor? ¿Cuál usar? En primer lugar cabe hacer una reflexión sobre qué forma de aplicar CSS hará nuestros desarrollos web más fácilmente mantenibles y aptos para ser modificados con poco esfuerzo. Parece claro que es la declaración externa la que mejor independiza los estilos del contenido y la que menor número de modificaciones implicará en general. Por ello es la forma de trabajar con CSS a la que debemos acostumbrarnos.</p>
+			          <p> No obstante, cuando trabajes con desarrollos web comprobarás que también son de uso frecuente la aplicación de estilos en línea o interna. En algunos casos esto es debido a desconocimiento de la persona que realiza el desarrollo o a la forma de funcionamiento del programa con el que se ha creado la página web, pero en otros casos obedece a que se ha querido hacer así.</p>
+			          <p> En ocasiones se opta por hacer modificaciones en línea porque se buscan efectos puntuales que sólo se quieren aplicar en un punto concreto y en ningún otro. En ocasiones se opta por hacer definiciones CSS internas porque se quiere afectar muy puntualmente a un archivo y a ningún otro. Y en otros casos, se usan los estilos en línea o internos simplemente &ldquo;por las prisas&rdquo; o &ldquo;por ser lo más rápido&rdquo;.</p>
+			          <p> A efectos del navegador, una declaración en línea tiene precedencia sobre una declaración interna, y a su vez una declaración interna tiene precedencia sobre una declaración externa. Por tanto podríamos tener CSS sobreescrito varias veces: la declaración externa puede ser sobreescrita por la interna, y ésta a su vez por la en línea. El navegador aplicará el orden:</p>
+			          <p class="omega"><STRONG>Declaración en línea &gt; Declaración interna &gt; Declaración externa</STRONG></p>
+			          <p>  </p>
+			          <p> Podría ocurrir que los estilos que visualicemos en el navegador estén definidos &ldquo;a trozos&rdquo; de modo que parte de lo que se visualiza se debe a las declaraciones CSS externas, parte a las declaraciones CSS internas y parte a declaraciones en línea. Esto en general será indeseable, ya que hará difícil de mantener el desarrollo web, no se sabrá con certeza cómo se generan los estilos y el desarrollo puede terminar convirtiéndose en un caos difícil de mantener. También puede dar lugar a visualizaciones incorrectas o erróneas.</p>
+			          <p> A modo de resumen y como recomendación: mantén los estilos de forma externa, lo más ordenadamente posible y sin utilizar redefiniciones internas ni en línea. Usa este tipo de definiciones (interna o en línea) exclusivamente cuando resulte necesario y comenta adecuadamente el código. Trabajar ordenadamente será algo que a la larga te resultará ventajoso, tanto a ti mismo como a otras personas que tengan que trabajar en desarrollos donde tú hayas participado.</p>
+	              </DIV></td>
+		        </tr>
+		      </table>
+			  <p>&nbsp;</p>
+		    </div>
+			<div class="wrapper"></div>
+	  </div>
+  </section>
+<!-- / content -->
+<!-- footer -->
+<footer>
+		<!--<a rel="nofollow" href="http://www.templatemonster.com/" target="_blank">Website template</a> designed by TemplateMonster.com<br>-->
+    <img src="images/99.JPG" width="920" height="164"></footer>
+<!-- / footer -->
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
