@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta content="Henry Vanegas Plaza, Yeison Oviedo " name="author"/>
+    <meta content="Ovi Del Curso Diseño De Sitios Web " name="description" />
+    <meta content="Html5, Css, Lecturas, Multimedia, Actividades, Unad " name="keywords" />
+	<title>OVI GIT, GITHUB, HTML5 Y CSS</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+</head>
+
+
+<body>	
+
+	<div id="contenedor">
+		<header>
+	  		<img title="Ovi Diseño de sitios web" src="img/banner.png" alt="logo unad ovi del curso diseño de sitios web" width="1000" height="150">
+		</header>
+		
+
+		<nav>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="#">LECTURAS</a> 
+					<ul> 
+                        <li> <a target="_blank" href="Lecturas/HTML5.pdf">HTML5</a> </li>
+    					<li> <a target="_blank" href="Lecturas/CursoCSS3.pdf">CSS3</a> </li>
+						<li> <a href="lectura3.html">Incluir CSS3 en un documento HTML5</a> </li>
+						<li> <a href="https://www.genbetadev.com/sistemas-de-control-de-versiones/conociendo-github-el-servicio-donde-alojar-tus-repositorios-git-como-el-nuestro">Conociendo GitHub, el servicio donde alojar tus repositorios Git (como el nuestro) </a> </li>
+						<li> <a href="">submenu</a> </li>
+						</script>  
+					</ul> 
+				</li>
+				<li><a href="#">MULTIMEDIA </a>
+					<ul> 
+						<li> <a href="video1.html">Video Git Hub Pages</a> </li>
+						<li> <a href="">submenu</a> </li>
+					</ul>
+				</li>
+				<li><a href="#">ACTIVIDADES </a>
+					<ul> 
+						<li> <a href="https://www.educaplay.com/es/recursoseducativos/2935861/diseno_de_sitios_web.htm" target="_blank">Crucigrama Sencillo</a> </li>
+						<li> <a href="">submenu</a> </li>
+						<li> <a href="">submenu</a> </li>
+					</ul>
+				</li>
+				<li><a href="autores.html">AUTORES </a></li>
+			</ul>
+		</nav>
+	  	
+		<section class="lecturatres">
+			<article>
+				<h2>INCLUIR CSS3 EN UN DOCUMENTO HTML5</h2>
+				<figure align="center">
+				<a title="CSS3" href="https://pixabay.com/es/css3-gr%C3%A1ficos-3d-blindar-1841488/" target="_blank"><img src="img/css3.jpg" alt="css3" width="300" height="250"></a>
+				<figcaption>Css3 Public Design707</figcaption>
+				</figure>
+
+    			<p>
+    			En este documento veremos formas adicionales de aplicar estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo).</p>
+    			<h2>1.6.1. Incluir CSS en el mismo documento HTML/ESTILO INTERNO</h2>
+				<p>Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta "style" de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección "head").
+				Ejemplo:
+				</p>
+				<figure align="center"> 
+				<img title="estilos internos css" src="img/estilointerno.png" alt="estilos internos css"> 
+				<figcaption>estilo interno css</figcaption>
+				</figure>
+				<p>
+				Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos que se incluyen por defecto en todas las páginas del sitio web.
+				El principal inconveniente es que si se quiere hacer una modificación en los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a modificar.
+    			</p>
+
+    			<h2>1.6.2. Definir CSS en un archivo externo/ESTILO EXTERNO</h2>
+    	
+    			<p>
+				En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta "link". Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite. 
+				Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
+    			</p>
+    			<figure align="center">
+					<img title="estilo externo" src="img/estiloexterno.png" alt="estilo externo" width="600">
+					<figcaption align="center">
+					estilo externo css
+					</figcaption>
+				</figure>
+				<p>
+					Cuando el navegador carga la página HTML anterior, antes de mostrar sus contenidos también descarga los archivos CSS externos enlazados mediante la etiqueta "link" y aplica los estilos a los contenidos de la página.
+					Normalmente, la etiqueta "link" incluye cuatro atributos cuando enlaza un archivo CSS:
+					rel: indica el tipo de relación que existe entre el recurso enlazado (en este caso, el archivo CSS) y la página HTML. Para los archivos CSS, siempre se utiliza el valor stylesheet
+					type: indica el tipo de recurso enlazado. Sus valores están estandarizados y para los archivos CSS su valor siempre es text/css
+					href: indica la URL del archivo CSS que contiene los estilos. La URL indicada puede ser relativa o absoluta y puede apuntar a un recurso interno o externo al sitio web.
+					media: indica el medio en el que se van a aplicar los estilos del archivo CSS. Más adelante se explican en detalle los medios CSS y su funcionamiento.
+					De todas las formas de incluir CSS en las páginas HTML, esta es la más utilizada con mucha diferencia. La principal ventaja es que se puede incluir un mismo archivo CSS en multitud de páginas HTML, por lo que se garantiza la aplicación homogénea de los mismos estilos a todas las páginas que forman un sitio web.
+					Con este método, el mantenimiento del sitio web se simplifica al máximo, ya que un solo cambio en un solo archivo CSS permite variar de forma instantánea los estilos de todas las páginas HTML que enlazan ese archivo.
+
+					Librosweb.es Licencia Creative Commons_ Lopez Quesada.
+
+					Para mas información ingrese a: <a href="http://dis.um.es/~lopezquesada/documentos/IES_1213/LMSGI/curso/UT5/libroswebcss/www.librosweb.es/css/capitulo1/como_incluir_css_en_un_documento_xhtml.html" target="_blank">enlace al libro</a>
+				</p>
+			</article>
+		</section>
+
+		<aside class="lecturatres"> 
+		<div>
+			<h3>RED SOCIAL UNAD TWITTER</h3> 
+			<figure align="center">
+				<a title="Twitter UNAD" href="https://twitter.com/universidadunad?lang=es" target="_blank"><img src="img/twitter.png" alt="Unad twitter" width="150" height="150"></a>
+			<figcaption>Haga clic en el logo para ingresar al twitter de la Universidad Unad</figcaption> 
+			</figure>
+		</div>
+		<div>
+			<h3>CONTADOR DE VISITAS</h3> 
+			<figure align="center">
+				<!-- Contador de visitas -->
+				<script type="text/javascript" src="https://counter1.fcs.ovh/private/counter.js?c=2tubl1bus8r7mjbhh9n3snr65bxgket9"></script>
+				<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas com"><img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=2tubl1bus8r7mjbhh9n3snr65bxgket9" border="0" title="contador de visitas com" alt="contador de visitas"></a></noscript>
+				<!-- Fin Contador de visitas -->
+			</figure>
+			<h3>REFERENCIA</h3>
+			<p>Librosweb.es Licencia Creative Commons_ Lopez Quesada.
+
+					Para mas información ingrese a: <a href="http://dis.um.es/~lopezquesada/documentos/IES_1213/LMSGI/curso/UT5/libroswebcss/www.librosweb.es/css/capitulo1/como_incluir_css_en_un_documento_xhtml.html" target="_blank">enlace al libro</a>
+			</p>
+		</div>
+		</aside>
+
+		<Footer>
+			<figure class="footer">
+					<img title="3er Congreso Mundial Para la educación superior a distancia" src="img/logo2.png" alt="tercer congreso mundial" width="250" height="50">
+			</figure>
+			<h4 id="fo">Sitio Web desarrollado por el grupo 26 Diseño de sitios web Universidad Nacional Abierta y a Distancia UNAD_2017</h4>
+		</Footer>
+		
+	</div>
+</body>
+
+
+<script src="js/modernizr.js"></script>   
+<script src="js/prefixfree.js"></script>
+<script src="js/jquery-2.1.1.js"></script>   
+
+
+</html>
